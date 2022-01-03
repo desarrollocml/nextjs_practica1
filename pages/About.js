@@ -6,7 +6,7 @@ export default function About() {
       <Head>
         <title>Next.js - About</title>
       </Head>
-      <h1>Services </h1>
+      <h1>About </h1>
     </Container>
   );
 }
