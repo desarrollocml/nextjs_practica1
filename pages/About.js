@@ -1,10 +1,9 @@
-import Navigation from "../components/navigation"
+import Container from "../components/Container"
 
 export default function About() {
     return (
-        <div>
-            <Navigation></Navigation>
-            <h1>About</h1>
-        </div>
+        <Container>
+        <h1>Services </h1>
+        </Container>
     )
 }
