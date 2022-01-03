@@ -1,11 +1,24 @@
-import React from 'react'
+import Link from 'next/link'
 
 export default function Navigation() {
     return (
         <ul>
-            <li>Index</li>
-            <li>About</li>
-            <li>Services</li>
+            <li>
+               <Link href="/">
+                 <a>Index</a>  
+                </Link>
+            </li>
+            <li>
+               <Link href="/about">
+                 <a>About</a>  
+                </Link>
+            </li>
+            <li>
+               <Link href="/services">
+                 <a>Services</a>  
+                </Link>
+            </li>
+            
         </ul>
     )
 }

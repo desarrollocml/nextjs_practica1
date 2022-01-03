@@ -1,9 +1,8 @@
-import Navigation from "../components/navigation"
+import Container from "../components/Container"
 export default function Home() {
   return (
-    <div>
-            <Navigation></Navigation>
-            <h1>index</h1>
-        </div>
+    <Container>
+      <h1>Index </h1>
+    </Container>
   )
 }
