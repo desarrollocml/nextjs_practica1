@@ -1,6 +1,8 @@
 import Container from "../components/Container"
 import Head from "next/head"
-export default function Home() {
+import fetch from "isomorphic-unfetch"
+export default function Home(props) {
+  console.log(props)
   return (
     <Container>
       <Head>
@@ -10,3 +12,11 @@ export default function Home() {
     </Container>
   )
 }
+Home.getInitialProps = async (ctx)=>{
+  const res = await fetch("https://reqres.in/api/users");
+  const resJSON = await res.json();
+  console.log(resJSON.data);
+   return {
+    users: resJSON.data,
+  }; 
+};

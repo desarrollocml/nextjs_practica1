@@ -12,7 +12,7 @@ export default function Container(props) {
               
             </Head>
             <Navigation/>
-            <div>
+            <div className ="container p-4"> 
                 {props.children}
             </div>
         </div>
